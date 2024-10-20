@@ -10,7 +10,7 @@ body {
   padding: 20px;
   /* background-image: linear-gradient(to bottom, #fff1eb, #ace0f9); */
   background-color: #fff1eb;
-  height: 90vh;
+  
 }
 
 /* Header Styling */
@@ -73,8 +73,9 @@ input[type="text"] {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .product-card {
@@ -86,11 +87,18 @@ input[type="text"] {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   width: 20%;
+  margin: 12px;
+  margin-bottom: 24px;
+  
+  
+  
+}
+@media screen {
   
 }
 
 .product-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.08);
 }
 
 .product-card img {
@@ -234,3 +242,52 @@ button:last-of-type {
   color: #34495e;
 }
 
+/* Mobile devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .icons {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .product-list {
+    /* grid-template-columns: .8fr; */
+    flex-direction: column;
+    
+  }
+
+  .product-card {
+    margin-bottom: 20px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card h3 {
+    font-size: 1rem;
+
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .faqs_section{
+    background-color: #c0392b;
+    display: none;
+  }
+}

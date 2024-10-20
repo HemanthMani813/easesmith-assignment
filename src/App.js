@@ -30,13 +30,15 @@ const mockProducts = [
   { id: 15, name: 'Snake Plant', price: 199, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-y8pY1RUyWyV1PDpz3p2KPZGvaL3C7yZszNoqoT_eNhoTXQDL_-_B&usqp=CAE&s' },
   { id: 16, name: 'Monstera', price: 299, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2_btmGz4phe1z84YndmbNKpuoOcxUcfWy98sbJnSSBKYVWj7x' },
 
+  { id: 17, name: 'Monstera', price: 299, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2_btmGz4phe1z84YndmbNKpuoOcxUcfWy98sbJnSSBKYVWj7x' },
+
   // Add more products here...
 ];
 
 function App() {
   const [cartModal, setCartModal] = useState({ isOpen: false, product: null });
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 4;
+  const productsPerPage = 6;
 
   const openModal = (product) => {
     setCartModal({ isOpen: true, product });
@@ -64,7 +66,7 @@ function App() {
             path="/"
             element={
               <div className='home_section'>
-                  <div className='faqs_sectio'>
+                  <div className='faqs_section'>
                     <Faqs/>
                   </div>
                   <div>
