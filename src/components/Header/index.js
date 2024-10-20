@@ -94,8 +94,9 @@ const Header = () => {
     <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
     <ul className="menu bg-base-200 min-h-full w-80 p-4">
       {/* Sidebar content here */}
-      <li>Sidebar Item 1</li>
-      <li>Sidebar Item 2</li>
+      
+      <li>Cart</li>
+      <li>Profile</li>
     </ul>
   </div>
 </div>
